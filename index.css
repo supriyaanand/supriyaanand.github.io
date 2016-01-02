@@ -55,7 +55,7 @@ p#name{
     text-align: center;
 }
 
-p.desc{
+.desc{
     font-size: 30px;
     color: black;
     margin: 0 0 10px 0;
@@ -64,7 +64,15 @@ p.desc{
     text-align: center;
 }
 
-#home{
+.gen{
     margin: 0 auto;
     padding: 90px;
+}
+
+.para{
+    font-size: 20px;
+    color: black;
+    margin-bottom: 30px;
+    width: auto;
+    text-align: center;
 }
