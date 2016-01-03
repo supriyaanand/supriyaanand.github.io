@@ -76,3 +76,21 @@ p#name{
     width: auto;
     text-align: center;
 }
+
+.projectTitle{
+    font-size: 30px;
+    color: black;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: auto;
+    text-align: left;
+}
+
+.projectDesc{
+    font-size: 20px;
+    color: black;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: auto;
+    text-align: left;
+}

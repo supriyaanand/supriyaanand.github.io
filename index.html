@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="webPortfolioApp">
 
 <head>
     <meta charset="UTF-8">
-    
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="index.css">
 
@@ -11,19 +11,28 @@
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>-->
+
+    <!--<script src="http://angular-ui.github.com/bootstrap/ui-bootstrap-tpls-0.2.0.js"></script>-->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.js"></script>
+    <script src="http://angular-ui.github.com/bootstrap/ui-bootstrap-tpls-0.2.0.js"></script>
+    <script src="index.js"></script>
+
+
     <title> Supriya Anand </title>
 </head>
 
-<body>
+<body ng-controller="projectsCtrl">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-4"></div>
             <div class="col-md-4">
                 <ul class="nav nav-pills" role="tablist">
-                    <li role="presentation"class="active"><a href="#home" role="tab" data-toggle="tab">Home</a></li>
+                    <li role="presentation" class="active"><a href="#home" role="tab" data-toggle="tab">Home</a></li>
                     <li role="presentation"><a href="#about" role="tab" data-toggle="tab">About</a></li>
-                    <li role="presentation"><a href="#projects" role="tab" data-toggle="tab">Projects</a></li>
+                    <li role="presentation"><a href="#projectsTab" role="tab" data-toggle="tab">Projects</a></li>
                     <li role="presentation"><a href="#getInTouch" role="tab" data-toggle="tab">Get In Touch</a></li>
                 </ul>
             </div>
@@ -48,8 +57,13 @@
                     </div>
                 </div>
 
-                <div role="tabpanel" class="tab-pane" id="projects">
-                    <p id="name">Projects</p>
+                <div role="tabpanel" class="tab-pane" id="projectsTab">
+                    <div>
+                        <div ng-repeat="project in projects" heading="{{project.title}}">
+                            <span class="projectTitle">{{project.title}}</span>
+                            <div class="projectDesc">{{project.desc}}</div>
+                        </div>
+                    </div>
                 </div>
 
                 <div role="tabpanel" class="tab-pane" id="getInTouch">
