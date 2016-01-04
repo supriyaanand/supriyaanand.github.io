@@ -1,5 +1,9 @@
 html {
-    background-color: #ADD8E6;
+    background-color: lightgray;
+    -moz-box-shadow: 0 0 20px black;
+    -webkit-box-shadow: 0 0 20px black;
+    box-shadow: 0 0 20px black;
+    width: auto;
 }
 
 .nav-tabs > li > a{
@@ -9,13 +13,13 @@ html {
 .nav-tabs > li.active > a{
     background-color: #337ab7 !important;
     border:none;
-    color:#DCDCDC;
+    color:white;
 }
 
 .nav-tabs > li > a{
     background-color: #DCDCDC !important;
     border:none;
-    color:#23527c;
+    color:darkgray;
     padding: 10px;
 }
 
@@ -26,9 +30,25 @@ html {
 }
 
 body{
-    background-color: #ADD8E6;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background-color: lightgray;
 }
+
+.layout{
+    background-color: white;
+    -moz-box-shadow: 0 0 20px black;
+    -webkit-box-shadow: 0 0 20px black;
+    box-shadow: 0 0 20px black;
+    width: 1000px;
+    border: solid 2px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 50px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
 #page-wrap {
     width: auto;
     margin: 50px auto;
