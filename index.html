@@ -79,7 +79,9 @@
                     <div class="gen">
                         <div ng-repeat="project in projects" heading="{{project.title}}">
                             <div class="panel panel-default">
-                            <div class="panel-heading"><h3 class="panel-title">{{project.title}}</h3></div>
+                            <div class="panel-heading"><h3 class="panel-title">{{project.title}}&nbsp;&nbsp;<a href="{{project.link}}" target="_blank"><button type="button" class="btn btn-default btn-sm">
+                          <span class="glyphicon glyphicon-link" aria-hidden="true"></span>
+                        </button></a></h3></div>
                             <div class="panel-body">{{project.desc}}</div>
                             </div>
                         </div>
