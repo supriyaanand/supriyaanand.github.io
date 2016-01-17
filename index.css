@@ -139,3 +139,8 @@ p#name{
     margin: 0 auto;
     padding: 20px;
 }
+
+.list-group-horizontal .list-group-item {
+    display: inline-block;
+    border: none;
+}

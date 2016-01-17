@@ -79,12 +79,17 @@
                     <div class="gen">
                         <div ng-repeat="project in projects" heading="{{project.title}}">
                             <div class="panel panel-default">
-                            <div class="panel-heading"><h3 class="panel-title">{{project.title}}&nbsp;&nbsp;<a href="{{project.link}}" target="_blank"><button type="button" class="btn btn-default btn-sm">
+                            <div class="panel-heading"><h3 class="panel-title">{{project.title}}&nbsp;&nbsp;<a ng-show="project.gitHubLinkPresent == true" href="{{project.gitHubLink}}" target="_blank" data-toggle="tooltip" title="View on GitHub"><button type="button" class="btn btn-default btn-sm">
+                          <span class="glyphicon glyphicon-link" aria-hidden="true"></span>
+                        </button></a>&nbsp;&nbsp;<a ng-show="project.demoLinkPresent == true" href="{{project.demoLink}}" target="_blank" data-toggle="tooltip" title="View live demo"><button type="button" class="btn btn-default btn-sm">
                           <span class="glyphicon glyphicon-link" aria-hidden="true"></span>
                         </button></a></h3></div>
                             <div class="panel-body">{{project.desc}}</div>
-                            </div>
+                            <ul class="list-group list-group-horizontal">
+                                <li class="list-group-item" ng-repeat="tech in project.stack">{{tech}}</li>
+                            </ul>
                         </div>
+                    </div>
                     </div>
                 </div>
 
@@ -120,3 +125,4 @@
 </body>
 
 </html>
+
