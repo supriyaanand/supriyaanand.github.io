@@ -3,14 +3,14 @@ function projectsCtrl($scope) {
 
     $scope.projects = [
         {title: 'AI Game Playing Agent',
-            desc: "Developed an AI game playing agent that uses Adversarial search techniques Minimax, Minimax with Alpha Beta Pruning and Greedy Best First Search to play a version of the classic Othello game.",
+            desc: "AI game playing agent that uses Adversarial search techniques Minimax, Minimax with Alpha Beta Pruning and Greedy Best First Search to play a version of the classic Othello game.",
             open: true,
             demoLinkPresent: false,
             gitHubLinkPresent: false,
             stack: ["Python"]
         },
         {title: 'AI Inference System for First Order Logic',
-            desc: "Developed an inference system with Backward Chaining to determine entailment of definite clauses given a First Order Logic Knowledge Base.",
+            desc: "Inference system with Backward Chaining to determine entailment of definite clauses given a First Order Logic Knowledge Base.",
             open: true,
             demoLinkPresent: false,
             gitHubLinkPresent: false,
