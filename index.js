@@ -2,9 +2,23 @@ angular.module('webPortfolioApp', ['ui.bootstrap']);
 function projectsCtrl($scope) {
 
     $scope.projects = [
+        {title: 'AI Game Playing Agent',
+            desc: "Developed an AI game playing agent that uses Adversarial search techniques Minimax, Minimax with Alpha Beta Pruning and Greedy Best First Search to play a version of the classic Othello game."
+            open: true,
+            demoLinkPresent: false,
+            gitHubLinkPresent: false,
+            stack: ["Python"]
+        },
+        {title: 'AI Inference System for First Order Logic',
+            desc: "Developed an inference system with Backward Chaining to determine entailment of definite clauses given a First Order Logic Knowledge Base."
+            open: true,
+            demoLinkPresent: false,
+            gitHubLinkPresent: false,
+            stack: ["Python"]
+        },
         {title: 'Grasshopper',
             desc: "The Grasshopper virtual phone system helps entrepreneurs sound more professional and stay connected from anywhere. Features include toll free and local numbers, custom greetings, multiple extensions for employees, call forwarding to any phone anywhere in the world, voicemail to email, and much more. Unlike a traditional phone system, Grasshopper is managed all online and in the cloud - there's no hardware to purchase and no software to install.",
-            open: true,
+            open: false,
             demoLink: "http://grasshopper.com",
             demoLinkPresent: true,
             gitHubLinkPresent: false,
