@@ -1294,7 +1294,7 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #intro {
-	background: #151515;
+	background: #151515 url(../images/bg.jpg) no-repeat center bottom;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -2525,12 +2525,19 @@ footer .footer-social li a {
 }
 footer .copyright span {
 	display: inline-block;
+	color: #262626;
 }
+
+footer .copyright span a{
+	display: inline-block;
+	color: #262626;
+}
+
 footer .copyright span::after {
 	content: "|";
 	display: inline-block;
 	padding: 0 1rem 0 1.2rem;
-	color: rgba(255, 255, 255, 0.1);
+	color: #262626;
 }
 footer .copyright span:last-child::after {
 	display: none;
