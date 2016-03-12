@@ -292,11 +292,11 @@
 	<section id="portfolio">
 
 		<div class="row section-intro">
-   		<div class="col-twelve">
+         <div class="col-twelve">
 
-   			 <!-- Project
+             <!-- Project
      ----------------------------------------------- -->
-     <div class="row work">
+     <div class="row work" ng-controller="projectsCtrl">
 
         <div class="col-four">
            <h1><span>Projects</span></h1>
@@ -306,19 +306,26 @@
 
            <div class="row">
 
-              
+              <div class="col-twelve" ng-repeat="project in projects">
+                <h3>{{project.title}}</a>
+                <span><a ng-show="project.gitHubLinkPresent" ng-href="{{project.gitHubLink}}"><i class="fa fa-github"></i></a></span>
+                </h3>
+                 <p>{{project.desc}}</p>
 
-           </div> <!-- row  end -->
+                 <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item" ng-repeat="tech in project.stack">{{tech}}</li>
+                 </ul>
+              </div>
+
+           </div> <!-- item end -->
 
         </div> <!-- main-col end -->
 
      </div> <!-- End Projects -->
 
-	            
+         </div>  <!-- /twelve -->   
 
-   		</div>  <!-- /twelve -->   
-
-   	</div> <!-- /portfolio-content --> 
+      </div> <!-- /portfolio-content --> 
 		
 	</section> <!-- /portfolio --> 
 
