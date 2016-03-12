@@ -165,9 +165,9 @@
    		</div> <!-- /resume-header -->
 
    		<div class="col-twelve" ng-controller="workExCtrl">
+            <div class="timeline-wrap">
 
             <div ng-repeat="work in workex">
-   			<div class="timeline-wrap">
 
    				<div class="timeline-block">
 
@@ -207,47 +207,31 @@
 
    		</div> <!-- /resume-header -->
 
-   		<div class="col-twelve">
+   		<div class="col-twelve" ng-controller="educationCtrl">
 
    			<div class="timeline-wrap">
 
-   				<div class="timeline-block">
-	   				
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-graduation-cap"></i>
-	   				</div>
+               <div ng-repeat="edu in schools">
 
-	   				<div class="timeline-header">
-	   					<h3>MS in Computer Science</h3>
-	   					<p>July 2015 - Present</p>
-	   				</div>
+      				<div class="timeline-block">
+   	   				
+   	   				<div class="timeline-ico">
+   	   					<i class="fa fa-graduation-cap"></i>
+   	   				</div>
 
-	   				<div class="timeline-content">
-	   					<h4>University of Southern California</h4>
-	   					<p></p>
-	   				</div>
+   	   				<div class="timeline-header">
+   	   					<h3>{{edu.what}}</h3>
+   	   					<p>{{edu.when}}</p>
+   	   				</div>
 
-	   			</div> <!-- /timeline-block -->
+   	   				<div class="timeline-content">
+   	   					<h4>{{edu.where}}</h4>
+   	   					<p>{{edu.desc}}</p>
+   	   				</div>
 
-	   			<div class="timeline-block">
+   	   			</div> <!-- /timeline-block -->
 
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-graduation-cap"></i>
-	   				</div>
-
-
-	   				<div class="timeline-header">
-	   					<h3>B.E. Information Science</h3>
-	   					<p>Sept 2009 - June 2013</p>
-	   				</div>
-
-	   				<div class="timeline-content">
-	   					<h4>B M S College of Engineering, India</h4>
-	   					<p></p>
-	   				</div>
-
-	   			</div> <!-- /timeline-block -->
-
+               </div>
 
    			</div> <!-- /timeline-wrap -->   			
 

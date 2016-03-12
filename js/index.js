@@ -76,6 +76,7 @@ function projectsCtrl($scope) {
         },
     ];
 }
+
 function workExCtrl($scope) {
 
     $scope.workex = [
@@ -113,4 +114,19 @@ function workExCtrl($scope) {
             desc: ["Engineered a cloud based organizer for the legal community with modules for reminders and notifications"]
         },
     ];
+}
+
+function educationCtrl($scope) {
+    $scope.schools = [
+        {   what: 'M.S in Computer Science',
+            where: "University of Southern California",
+            when: "July 2015 - Present",
+            desc: "Specializing in Natural Language Processing, Information Retrieval and Data Mining",
+        },
+        {   what: 'B.E in Information Science',
+            where: "B M S College of Engineering, India",
+            when: "Sept 2009 - June 2013",
+            desc: "",
+        },
+    ];    
 }
