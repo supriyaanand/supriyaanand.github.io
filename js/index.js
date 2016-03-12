@@ -22,7 +22,7 @@ function projectsCtrl($scope) {
             demoLink: "http://grasshopper.com",
             demoLinkPresent: true,
             gitHubLinkPresent: false,
-            stack: ["Ruby on Rails", "RSpec", "Angular JS"]
+            stack: ["Ruby on Rails", "RSpec", "AngularJS"]
         },
         {title: 'GoCalendar',
             desc: 'A personal calendar on the cloud. Can also be used by enterprises that operate out of large offices to book conference rooms when scheduling meetings.',
@@ -31,7 +31,7 @@ function projectsCtrl($scope) {
             demoLinkPresent: true,
             gitHubLinkPresent: true,
             demoLink: "http://evcalendar.herokuapp.com/",
-            stack: ["Ruby on Rails", "Angular JS"]
+            stack: ["Ruby on Rails", "AngularJS"]
         },
         {title: 'TagSent',
             desc: 'Sentiment analysis on book reviews',
@@ -75,4 +75,58 @@ function projectsCtrl($scope) {
             stack: ["HTML", "CSS", "Bootstrap", "jQuery"]
         },
     ];
+}
+
+function workExCtrl($scope) {
+
+    $scope.workex = [
+        {title: 'Graduate Associate',
+            where: "Office of Institutional Research, University of Southern California",
+            when: "January 2016 - Present",
+            desc: ["Design and development of a text analysis framework for course evaluations"],
+        },
+        {title: 'Associate Software Developer',
+            where: "Mavenhive Technologies",
+            when: "Feb 2015 - June 2015",
+            desc: ["Full stack web development for the Grasshopper cloud telephony service on the Rails stack with an AngularJS frontend",
+                    "Designed and implemented a Proof-of-Concept for an in-house Customer Relationship Management Tool",
+                    "Implemented RESTful APIs required to aggregate data for the CRM product from existing components"]
+        },
+        {title: 'Software Development Engineer in Test',
+            where: "Akamai Technologies",
+            when: "July 2013 - September 2014",
+            desc: ["Integrated cross language test frameworks with the Akamai HD Automation framework",
+                    "Incorporated a code coverage metrics module into the test framework to identify and target un-tested code which resulted in enhanced code coverage",
+                    "Designed and implemented test plans to validate key features of products across both Live and Video-on-Demand Media Delivery solutions",
+                    "Collaborated with three teams numbering twenty plus to incorporate continuous integration model of development, integration of static code analyzers Coverity, Cppcheck and Jenkins CI server which resulted in immediate bug catches and highly reduced regression cycle",
+                    "Analyzed and reported performance bottlenecks for a large-scale distributed network",
+                    "Extensively trained team members apprising them of quality initiatives. The training sessions have been digitally recorded for the benefit of new employees"
+                    ]
+        },
+        {title: 'Intern',
+            where: "Akamai Technologies",
+            when: "Feb 2013 - June 2013",
+            desc: ["Designed and developed a keyword driven code generator for the generation of test scripts for use with the Akamai HD Automation Framework"]
+        },
+        {title: 'Intern',
+            where: "Gavista Tech",
+            when: "Nov 2012 - Dec 2012",
+            desc: ["Engineered a cloud based organizer for the legal community with modules for reminders and notifications"]
+        },
+    ];
+}
+
+function educationCtrl($scope) {
+    $scope.schools = [
+        {   what: 'M.S in Computer Science',
+            where: "University of Southern California",
+            when: "July 2015 - Present",
+            desc: "Specializing in Natural Language Processing, Information Retrieval and Data Mining",
+        },
+        {   what: 'B.E in Information Science',
+            where: "B M S College of Engineering, India",
+            when: "Sept 2009 - June 2013",
+            desc: "",
+        },
+    ];    
 }

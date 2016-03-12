@@ -1,128 +1,386 @@
 <!DOCTYPE html>
-<html ng-app="webPortfolioApp">
-
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <!--<![endif]-->
+<html lang="en" ng-app="webPortfolioApp"> 
 <head>
-    <meta charset="UTF-8">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="index.css">
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Supriya Anand | CS Grad @ USC </title>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">  
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/vendor.css">     
 
-    <!--<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>-->
+   <!-- script
+   ================================================== -->  
+   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.js"></script>
+   <script src="http://angular-ui.github.com/bootstrap/ui-bootstrap-tpls-0.2.0.js"></script> 
+	<script src="js/modernizr.js"></script>
+	<script src="js/pace.min.js"></script>
+	<script src="js/index.js"></script>
 
-    <!--<script src="http://angular-ui.github.com/bootstrap/ui-bootstrap-tpls-0.2.0.js"></script>-->
+   <!-- favicons
+	================================================== -->
+	<link rel="icon" type="image/png" href="favicon.png">
 
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.js"></script>
-    <script src="http://angular-ui.github.com/bootstrap/ui-bootstrap-tpls-0.2.0.js"></script>
-    <script src="index.js"></script>
-
-
-    <title> Supriya Anand | CS Grad @ USC </title>
 </head>
 
-<body ng-controller="projectsCtrl">
-    <!-- Google analytics tracker code -->
-    <!-- Google Tag Manager -->
-    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MQSWDX"
-                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-MQSWDX');</script>
-    <!-- End Google Tag Manager -->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4"></div>
-            <div class="col-md-4">
-                <ul class="nav nav-pills" role="tablist">
-                    <li role="presentation" class="active"><a href="#home" role="tab" data-toggle="tab">Home</a></li>
-                    <li role="presentation"><a href="#about" role="tab" data-toggle="tab">About</a></li>
-                    <li role="presentation"><a href="#projectsTab" role="tab" data-toggle="tab">Projects</a></li>
-                    <li role="presentation"><a href="#getInTouch" role="tab" data-toggle="tab">Get In Touch</a></li>
-                </ul>
-            </div>
+<body id="top">
+
+	<!-- header 
+   ================================================== -->
+   <header>   	
+   	<div class="row">
+
+   		<div class="top-bar">
+   			<a class="menu-toggle" href="#"><span>Menu</span></a>	      
+
+		   	<nav id="main-nav-wrap">
+					<ul class="main-navigation">
+						<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
+						<li><a class="smoothscroll"  href="#about" title="">About</a></li>
+						<li><a class="smoothscroll"  href="#resume" title="">Resume</a></li>
+						<li><a class="smoothscroll"  href="#portfolio" title="">Projects</a></li>
+						<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>	
+					</ul>
+				</nav>    		
+   		</div> <!-- /top-bar --> 
+   		
+   	</div> <!-- /row --> 		
+   </header> <!-- /header -->
+
+	<!-- intro section
+   ================================================== -->
+   <section id="intro">   
+
+   	<div class="intro-overlay"></div>	
+
+   	<div class="intro-content">
+   		<div class="row">
+
+   			<div class="col-twelve">
+
+	   			<h1>Supriya Anand</h1>
+
+	   			<p class="intro-position">
+	   				<span>CS Grad @ USC</span>
+	   			</p>
+
+	   			<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
+
+	   		</div>  
+   			
+   		</div>   		 		
+   	</div> <!-- /intro-content --> 
+
+   	<ul class="intro-social">        
+         <li><a href="https://github.com/supriyaanand"><i class="fa fa-github"></i></a></li>
+         <li><a href="https://www.linkedin.com/in/supriyaanandrao"><i class="fa fa-linkedin"></i></a></li>
+         <li><a href="https://www.facebook.com/supriya.anand.9"><i class="fa fa-facebook"></i></a></li>
+      </ul> <!-- /intro-social -->      	
+
+   </section> <!-- /intro -->
+
+
+   <!-- about section
+   ================================================== -->
+   <section id="about">  
+
+   	<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>About</h5>
+
+   			<div class="intro-info">
+
+   				<p class="lead">I am a graduate student pursuing a Masters in Computer Science from the University of Southern California. My interests lie in Natural Language Processing, Data Mining, Information Retrieval and Back End Development. </p>
+
+				<p class="lead">I have a generalist background/experience in many areas including full stack web development, high performance network systems and various streaming technologies.</p>
+
+				<p class="lead">I hold a Bachelors degree in Information Science and Engineering from the B. M. S. College of Engineering, Bangalore.</p>
+   			</div>   			
+
+   		</div>   		
+   	</div> <!-- /section-intro -->
+
+   	<div class="row about-content">
+
+   		<div class="col-six tab-full">
+
+   			<h3>Skills</h3>
+   			<p></p>
+
+            <button class="btn btn-default">Python</button>
+            <button class="btn btn-default">Java</button>
+            <button class="btn btn-default">Ruby</button>
+            <button class="btn btn-default">Javascript</button>
+            <button class="btn btn-default">HTML</button>
+            <button class="btn btn-default">CSS</button>
+            <button class="btn btn-default">Python NLTK</button>
+            <button class="btn btn-default">Rails</button>
+            <button class="btn btn-default">AngularJS</button>
+				<button class="btn btn-default">PostgreSQL</button>
+            <button class="btn btn-default">MySQL</button>
+
+   		</div>
+
+         <div class="col-six tab-full">
+
+            <h3>Interests</h3>
+            <p></p>
+
+            <button class="btn btn-default">Natural Language Processing</button>
+            <button class="btn btn-default">Data Mining</button>
+            <button class="btn btn-default">Data Analysis</button>
+            <button class="btn btn-default">Machine Learning</button>
+
+         </div>
+
+   	</div>
+
+   	<div class="row button-section">
+   		<div class="col-twelve">
+   			<a href="./files/Supriya_Anand.pdf" title="Download CV" class="button button-primary">Download CV</a>
+   		</div>   		
+   	</div>
+
+   </section> <!-- /process-->    
+
+
+   <!-- resume Section
+   ================================================== -->
+	<section id="resume" class="grey-section">
+
+   	<div class="row resume-timeline">
+
+   		<div class="col-twelve resume-header">
+
+   			<h2>Work Experience</h2>
+
+   		</div> <!-- /resume-header -->
+
+   		<div class="col-twelve" ng-controller="workExCtrl">
+            <div class="timeline-wrap">
+
+            <div ng-repeat="work in workex">
+
+   				<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>{{work.title}}</h3>
+	   					<p>{{work.when}}</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>{{work.where}}</h4>
+	   					<p>
+                        <ul class="list-group">
+                          <li class="list-group-item" ng-repeat="des in work.desc">{{des}}</li>
+                        </ul></p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+               </div>
+	   			
+
+   			</div> <!-- /timeline-wrap -->   			
+
+   		</div> <!-- /col-twelve -->
+   		
+   	</div> <!-- /resume-timeline -->
+   	
+   	<div class="row resume-timeline">
+
+   		<div class="col-twelve resume-header">
+
+   			<h2>Education</h2>
+
+   		</div> <!-- /resume-header -->
+
+   		<div class="col-twelve" ng-controller="educationCtrl">
+
+   			<div class="timeline-wrap">
+
+               <div ng-repeat="edu in schools">
+
+      				<div class="timeline-block">
+   	   				
+   	   				<div class="timeline-ico">
+   	   					<i class="fa fa-graduation-cap"></i>
+   	   				</div>
+
+   	   				<div class="timeline-header">
+   	   					<h3>{{edu.what}}</h3>
+   	   					<p>{{edu.when}}</p>
+   	   				</div>
+
+   	   				<div class="timeline-content">
+   	   					<h4>{{edu.where}}</h4>
+   	   					<p>{{edu.desc}}</p>
+   	   				</div>
+
+   	   			</div> <!-- /timeline-block -->
+
+               </div>
+
+   			</div> <!-- /timeline-wrap -->   			
+
+   		</div> <!-- /col-twelve -->
+   		
+   	</div> <!-- /resume-timeline -->
+		
+	</section> <!-- /features -->
+
+
+	<!-- Portfolio Section
+   ================================================== -->
+	<section id="portfolio">
+
+		<div class="row section-intro">
+         <div class="col-twelve">
+
+             <!-- Project
+     ----------------------------------------------- -->
+     <div class="row work" ng-controller="projectsCtrl">
+
+        <div class="col-four">
+           <h1><span>Projects</span></h1>
+           <img src="./images/WordCloud.png" alt="Word Cloud" height="400px">
         </div>
 
-        <div class="row">
-            <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active gen" id="home">
-                    <div class="layout">
-                    <p id="name">Supriya Anand</p>
-                    <p class="desc">Computer Science Graduate Student</p>
-                    <p class="desc">University of Southern California</p>
-                    </div>
-                </div>
+        <div class="col-eight">
 
-                <div role="tabpanel" class="tab-pane" id="about">
-                    <div class="desc gen">
-                    <p class="para">I am a graduate student pursuing a Masters in Computer Science from the University of Southern California.
-                        My interests lie in leveraging Machine Learning techniques to understand human language.
-                        I am also interested in the use of data to understand causal relationships between texts and to mine the data at our disposal to model language structure and extract knowledge.
-                    </p>
-                    <p class="para">I have a generalist background/experience in many areas including full stack web development, high performance network systems and various streaming technologies.</p>
-                    <p class="para">I hold a Bachelors degree in Information Science and Engineering from the B. M. S. College of Engineering, Bangalore. </p>
-                    </div>
+           <div class="row">
 
-                    <div class="desc gen">
-                        <a href="files/Supriya_Anand.pdf" target="_blank"><button type="button" class="btn btn-default btn-lg">
-                          <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> Download Resume
-                        </button></a>
-                    </div>
-                </div>
+              <div class="col-twelve" ng-repeat="project in projects">
+                <h3>{{project.title}}</a>
+                <span><a ng-show="project.gitHubLinkPresent" ng-href="{{project.gitHubLink}}"><i class="fa fa-github"></i></a></span>
+                </h3>
+                 <p>{{project.desc}}</p>
+                 <ul><li>{{project.stack.join(", ")}}</li></ul>
+              </div>
 
-                <div role="tabpanel" class="tab-pane" id="projectsTab">
-                    <div class="gen">
-                        <div ng-repeat="project in projects" heading="{{project.title}}">
-                            <div class="panel panel-default">
-                            <div class="panel-heading"><h3 class="panel-title">{{project.title}}&nbsp;&nbsp;<a ng-show="project.gitHubLinkPresent == true" href="{{project.gitHubLink}}" target="_blank" data-toggle="tooltip" title="View on GitHub"><button type="button" class="btn btn-default btn-sm">
-                          <span class="glyphicon glyphicon-link" aria-hidden="true"></span>
-                        </button></a>&nbsp;&nbsp;<a ng-show="project.demoLinkPresent == true" href="{{project.demoLink}}" target="_blank" data-toggle="tooltip" title="View live demo"><button type="button" class="btn btn-default btn-sm">
-                          <span class="glyphicon glyphicon-link" aria-hidden="true"></span>
-                        </button></a></h3></div>
-                            <div class="panel-body">{{project.desc}}</div>
-                            <ul class="list-group list-group-horizontal">
-                                <li class="list-group-item" ng-repeat="tech in project.stack">{{tech}}</li>
-                            </ul>
-                        </div>
-                    </div>
-                    </div>
-                </div>
+           </div> <!-- item end -->
 
-                <div role="tabpanel" class="tab-pane" id="getInTouch">
-                    <div class="contact">Write to me at <span class="emailLink">supriya [dot] anandrao [at] gmail [dot] com</span> or <span class="emailLink"> supriyaa [at] usc [dot] edu </span> </div>
-                    <div id="icons">
-                        <div>
-                        <a href="https://www.linkedin.com/in/supriyaanandrao" target="_blank">
-                        <img src="images/linkedinIcon.png" width="50" height="30" border="0" alt="View Supriya Anand's profile on LinkedIn">
-                        </a>
-                        </div>
-                        <div>
-                        <a href="https://github.com/supriyaanand" target="_blank">
-                            <img src="images/githubIcon.ico" width="50" height="30" border="0" alt="View Supriya Anand's profile on GitHub">
-                        </a>
-                        </div>
-                    </div>
-                </div>
+        </div> <!-- main-col end -->
 
+     </div> <!-- End Projects -->
+
+         </div>  <!-- /twelve -->   
+
+      </div> <!-- /portfolio-content --> 
+		
+	</section> <!-- /portfolio --> 
+
+
+	
+	            
+
+
+	
+   <!-- contact
+   ================================================== -->
+	<section id="contact">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Contact</h5>
+   			<h1>Drop me a message!</h1>
+
+   			<p class="lead"></p>
+
+   		</div> 
+   	</div> <!-- /section-intro -->
+
+   	<div class="row contact-info">
+
+   		<div class="col-four tab-full">
+
+            <div class="icon">
+               <i class="icon-pin"></i>
             </div>
-        </div>
-    </div>
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        ga('create', 'UA-72031829-1', 'auto');
-        ga('send', 'pageview');
+            <p>
+            Los Angeles, CA
+            </p>
 
-    </script>
+         </div>
+   		<div class="col-four tab-full">
+
+   			<div class="icon">
+   				<i class="icon-mail"></i>
+   			</div>
+
+   			<p> supriya[dot]anandrao[at]gmail.com  <br> supriyaa[at]usc[dot]edu</p>
+
+   		</div>
+
+   		<div class="col-four tab-full">
+
+   			
+
+   		</div>
+   		
+   	</div> <!-- /contact-info -->
+		
+	</section> <!-- /contact -->
+
+
+   <!-- footer
+   ================================================== -->
+
+   <footer>
+     	<div class="row">
+
+     		<div class="col-six tab-full pull-right social">
+
+     			<ul class="footer-social">        
+			      <li><a href="https://github.com/supriyaanand"><i class="fa fa-github"></i></a></li>
+			      <li><a href="https://www.linkedin.com/in/supriyaanandrao"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://www.facebook.com/supriya.anand.9"><i class="fa fa-facebook"></i></a></li>
+			   </ul> 
+	      		
+	      </div>
+
+      	<div class="col-six tab-full">
+	      	<div class="copyright">
+		        	<span>© Copyright Kards 2016.</span> 
+		        	<span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>	         	
+		         </div>		                  
+	      	</div> 
+
+	      	<div id="go-top">
+		         <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+		      </div>
+
+      	</div> <!-- /row -->     	
+   </footer>  
+
+   <div id="preloader"> 
+    	<div id="loader"></div>
+   </div> 
+
+   <!-- Java Script
+   ================================================== --> 
+   <script src="js/jquery-2.1.3.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
+
 </body>
 
 </html>
-
