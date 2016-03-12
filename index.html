@@ -255,6 +255,7 @@
 
         <div class="col-four">
            <h1><span>Projects</span></h1>
+           <img src="./images/WordCloud.png" alt="Word Cloud" height="400px">
         </div>
 
         <div class="col-eight">
@@ -266,10 +267,7 @@
                 <span><a ng-show="project.gitHubLinkPresent" ng-href="{{project.gitHubLink}}"><i class="fa fa-github"></i></a></span>
                 </h3>
                  <p>{{project.desc}}</p>
-
-                 <ul class="list-group list-group-horizontal">
-                    <li class="list-group-item" ng-repeat="tech in project.stack">{{tech}}</li>
-                 </ul>
+                 <ul><li>{{project.stack.join(", ")}}</li></ul>
               </div>
 
            </div> <!-- item end -->

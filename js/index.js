@@ -22,7 +22,7 @@ function projectsCtrl($scope) {
             demoLink: "http://grasshopper.com",
             demoLinkPresent: true,
             gitHubLinkPresent: false,
-            stack: ["Ruby on Rails", "RSpec", "Angular JS"]
+            stack: ["Ruby on Rails", "RSpec", "AngularJS"]
         },
         {title: 'GoCalendar',
             desc: 'A personal calendar on the cloud. Can also be used by enterprises that operate out of large offices to book conference rooms when scheduling meetings.',
@@ -31,7 +31,7 @@ function projectsCtrl($scope) {
             demoLinkPresent: true,
             gitHubLinkPresent: true,
             demoLink: "http://evcalendar.herokuapp.com/",
-            stack: ["Ruby on Rails", "Angular JS"]
+            stack: ["Ruby on Rails", "AngularJS"]
         },
         {title: 'TagSent',
             desc: 'Sentiment analysis on book reviews',
