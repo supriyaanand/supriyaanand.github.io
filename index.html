@@ -164,8 +164,9 @@
 
    		</div> <!-- /resume-header -->
 
-   		<div class="col-twelve">
+   		<div class="col-twelve" ng-controller="workExCtrl">
 
+            <div ng-repeat="work in workex">
    			<div class="timeline-wrap">
 
    				<div class="timeline-block">
@@ -175,52 +176,22 @@
 	   				</div>
 
 	   				<div class="timeline-header">
-	   					<h3>Graduate Associate</h3>
-	   					<p>January 2016 - Present</p>
+	   					<h3>{{work.title}}</h3>
+	   					<p>{{work.when}}</p>
 	   				</div>
 
 	   				<div class="timeline-content">
-	   					<h4>Office of Institutional Research, University of Southern California</h4>
-	   					<p></p>
+	   					<h4>{{work.where}}</h4>
+	   					<p>
+                        <ul class="list-group">
+                          <li class="list-group-item" ng-repeat="des in work.desc">{{des}}</li>
+                        </ul></p>
 	   				</div>
 
 	   			</div> <!-- /timeline-block -->
 
-	   			<div class="timeline-block">
-
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase"></i>
-	   				</div>
-
-	   				<div class="timeline-header">
-	   					<h3>Associate Software Developer</h3>
-	   					<p>Feb 2015 - June 2015</p>
-	   				</div>
-
-	   				<div class="timeline-content">
-	   					<h4>Mavenhive Technologies</h4>
-	   					<p></p>
-	   				</div>
-
-	   			</div> <!-- /timeline-block -->
-
-	   			<div class="timeline-block">
-
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase"></i>
-	   				</div>
-
-	   				<div class="timeline-header">
-	   					<h3>Software Development Engineer in Test</h3>
-	   					<p>July 2013 - September 2014</p>
-	   				</div>
-
-	   				<div class="timeline-content">
-	   					<h4>Akamai Technologies</h4>
-	   					<p></p>
-	   				</div>
-
-	   			</div> <!-- /timeline-block -->
+               </div>
+	   			
 
    			</div> <!-- /timeline-wrap -->   			
 
