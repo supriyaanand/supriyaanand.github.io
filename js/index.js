@@ -83,7 +83,10 @@ function workExCtrl($scope) {
         {title: 'Graduate Associate',
             where: "Office of Institutional Research, University of Southern California",
             when: "January 2016 - Present",
-            desc: ["Design and development of a text analysis framework for course evaluations"],
+            desc: ["Design and development of a text analysis framework for course evaluations",
+                "Development of tools to automate ETL tasks",
+                "Development and optimization of stored procedures and user defined functions to facilitate reporting"
+            ],
         },
         {title: 'Associate Software Developer',
             where: "Mavenhive Technologies",
@@ -100,7 +103,7 @@ function workExCtrl($scope) {
                     "Designed and implemented test plans to validate key features of products across both Live and Video-on-Demand Media Delivery solutions",
                     "Collaborated with three teams numbering twenty plus to incorporate continuous integration model of development, integration of static code analyzers Coverity, Cppcheck and Jenkins CI server which resulted in immediate bug catches and highly reduced regression cycle",
                     "Analyzed and reported performance bottlenecks for a large-scale distributed network",
-                    "Extensively trained team members apprising them of quality initiatives. The training sessions have been digitally recorded for the benefit of new employees"
+                    "Recognized with a Spot Award for driving key quality initiatives within the Media and Content Delivery Streaming Engineering Teams"
                     ]
         },
         {title: 'Intern',
