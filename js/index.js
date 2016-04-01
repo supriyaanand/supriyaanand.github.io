@@ -16,6 +16,13 @@ function projectsCtrl($scope) {
             gitHubLinkPresent: false,
             stack: ["Python"]
         },
+        {title: 'Evaluation of Sentiment Analysis techniques',
+            desc: "Evaluation of Accuracy, Precision and Recall of sentiment analysis systems built using a wide range of classifiers including Logistic Regression, Maximum Entropy, Random Forests and Deep learning techniques using Neural Networks.",
+            open: true,
+            demoLinkPresent: false,
+            gitHubLinkPresent: false,
+            stack: ["Python", "Scikit-Learn", "NLTK", "SVM-Light"]
+        },
         {title: 'Grasshopper',
             desc: "The Grasshopper virtual phone system helps entrepreneurs sound more professional and stay connected from anywhere. Features include toll free and local numbers, custom greetings, multiple extensions for employees, call forwarding to any phone anywhere in the world, voicemail to email, and much more. Unlike a traditional phone system, Grasshopper is managed all online and in the cloud - there's no hardware to purchase and no software to install.",
             open: false,
