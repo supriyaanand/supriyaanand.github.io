@@ -131,7 +131,7 @@ function educationCtrl($scope) {
         {   what: 'M.S in Computer Science',
             where: "University of Southern California",
             when: "July 2015 - Present",
-            desc: "Specializing in Natural Language Processing, Information Retrieval and Data Mining",
+            desc: "Specializing in Natural Language Processing and Data Analytics",
         },
         {   what: 'B.E in Information Science',
             where: "B M S College of Engineering, India",
