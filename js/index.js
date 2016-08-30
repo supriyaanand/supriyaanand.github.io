@@ -90,10 +90,17 @@ function workExCtrl($scope) {
         {title: 'Graduate Associate',
             where: "Office of Institutional Research, University of Southern California",
             when: "January 2016 - Present",
-            desc: ["Design and development of a text analysis framework for course evaluations",
+            desc: ["Design and development of a text analysis framework for course evaluations with features to determine sentiment, auto summarize student responses across classes and extract relevant feedback across topics",
                 "Development of tools to automate ETL tasks",
                 "Development and optimization of stored procedures and user defined functions to facilitate reporting"
             ],
+        },
+        {title: 'Software Development Engineer Intern',
+            where: "Zillow",
+            when: "June 2016 - Aug 2016",
+            desc: ["Designed and developed a microservices architecture based image processing application that runs in a distributed environment interfacing via RabbitMq as a message broker",
+                    "Incorporated multiple features into an application that is responsible for acquiring and managing large volumes of data powering Zillow's listings",
+                    "Designed and implemented a POC for an application that auto extracts housing related info from OCR'ed documents"]
         },
         {title: 'Associate Software Developer',
             where: "Mavenhive Technologies",
