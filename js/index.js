@@ -2,6 +2,13 @@ angular.module('webPortfolioApp', ['ui.bootstrap']);
 function projectsCtrl($scope) {
 
     $scope.projects = [
+        {title: 'Search Space',
+            desc: "Vertical search engine built using Crawler4j and Solr with customizable search result ranking strategies",
+            open: true,
+            demoLinkPresent: false,
+            gitHubLinkPresent: false,
+            stack: ["Java", "Crawler4j", "Solr", "Lucene"]
+        },
         {title: 'AI Game Playing Agent',
             desc: "AI game playing agent that uses Adversarial search techniques Minimax, Minimax with Alpha Beta Pruning and Greedy Best First Search to play a version of the classic Othello game.",
             open: true,
@@ -100,7 +107,7 @@ function workExCtrl($scope) {
             when: "June 2016 - Aug 2016",
             desc: ["Designed and developed a microservices architecture based image processing application that runs in a distributed environment interfacing via RabbitMq as a message broker",
                     "Incorporated multiple features into an application that is responsible for acquiring and managing large volumes of data powering Zillow's listings",
-                    "Designed and implemented a POC for an application that auto extracts housing related info from OCR'ed documents"]
+                    "Designed and implemented a POC for an application that auto extracts housing related info from documents subject to Optical Character Recognition"]
         },
         {title: 'Associate Software Developer',
             where: "Mavenhive Technologies",
