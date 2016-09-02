@@ -90,7 +90,7 @@ function workExCtrl($scope) {
         {title: 'Graduate Associate',
             where: "Office of Institutional Research, University of Southern California",
             when: "January 2016 - Present",
-            desc: ["Design and development of a text analysis framework for course evaluations with features to determine sentiment, auto summarize student responses across classes and extract relevant feedback across topics",
+            desc: ["Design and development of a text analysis framework for course evaluations with features to determine sentiment, auto summarize student responses across classes and extract relevant feedback across topics via topic modelling techniques",
                 "Development of tools to automate ETL tasks",
                 "Development and optimization of stored procedures and user defined functions to facilitate reporting"
             ],
