@@ -2,12 +2,12 @@ angular.module('webPortfolioApp', ['ui.bootstrap']);
 function projectsCtrl($scope) {
 
     $scope.projects = [
-        {title: 'Search Space',
-            desc: "Vertical search engine built using Crawler4j and Solr with customizable search result ranking strategies",
+        {title: 'TweetSpace',
+            desc: "Tweet Space is an experimental social network designed to curate recent tweets from a given user profile on Twitter.",
             open: true,
             demoLinkPresent: false,
             gitHubLinkPresent: false,
-            stack: ["Java", "Crawler4j", "Solr", "Lucene"]
+            stack: ["Ruby on Rails, PostgreSQL, Twitter API, Bootstrap"]
         },
         {title: 'AI Game Playing Agent',
             desc: "AI game playing agent that uses Adversarial search techniques Minimax, Minimax with Alpha Beta Pruning and Greedy Best First Search to play a version of the classic Othello game.",
@@ -16,6 +16,13 @@ function projectsCtrl($scope) {
             gitHubLinkPresent: false,
             stack: ["Python"]
         },
+        {title: 'Search Space',
+            desc: "Vertical search engine built using Crawler4j and Solr with customizable search result ranking strategies",
+            open: true,
+            demoLinkPresent: false,
+            gitHubLinkPresent: false,
+            stack: ["Java", "Crawler4j", "Solr", "Lucene"]
+        },        
         {title: 'AI Inference System for First Order Logic',
             desc: "Inference system with Backward Chaining to determine entailment of definite clauses given a First Order Logic Knowledge Base.",
             open: true,
